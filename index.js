@@ -9,7 +9,7 @@ const PORT = 8888;
 const tweet = async ()=>{
     try{
         await rwClient.v2.tweet(
-            ",Goodevening hope your day is productive! testing server :)"
+            "another day to open system and code💻💻 :)"
         );
         console.log("tweeted!");
     }catch(error){
@@ -19,7 +19,7 @@ const tweet = async ()=>{
 
 //time you want it to show 
 //min,hour,day,month,year
-const job = new CronJob("51 18 * * *",()=>{
+const job = new CronJob("00 09 * * *",()=>{
     tweet();
 })
 
